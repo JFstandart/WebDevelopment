@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styleIndex.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/ragnar.jpg">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>RagnarNews!</title>
+</head>
+<body class="cuerpo">
+  <header>
+    <h2>Registro</h2>
+    <img class="" src="images/registro.png" alt="imagen de registro">
+  </header>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container formulario ">
+        <form action="PHP/Form.php" method="post">
+          <div class="form-group">
+            <label for="usuario"><b>Usuario:</b></label>
+            <input type="name" name="usuario" id="usuario" class="form-control " placeholder="Ingrese su username" required>
+          </div>
+          <div class="form-group">
+            <label for="contrasena"><b>Contraseña:</b></label>
+            <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="Ingrese su contraseña" required>
+          </div>
+          <div class="form-group">
+            <label for="verificacion"><b>Confirmación: </b> </label>
+            <input type="password" name="verificacion" id="verificacion" class="form-control" placeholder="Ingrese de nuevo su contraseña" required>
+          </div>
+          <div class="form-group">
+            <label for="correo"><b>E-Mail: </b> </label>
+            <input type="email" name="email" id="correo" class="form-control" placeholder="Ingrese su correo electrónico" required>
+          </div>
+          <input type="text" id="fecha" name="fecha" value="" hidden>
+          <div class="form-group">
+            <label for="sel1"><b>Ciudad:</b> </label>
+            <select class="form-control" id="sel1" name="ciudad" required>
+          <option>Medellín</option>
+          <option>Bogotá</option>
+          <option>Cali</option>
+          <option>Manizales</option>
+        </select>
+          </div>
+          <button type="submit" class="btn btn-block btn-primary" onclick="infoSignUp()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
